@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Pour la barre de navigation */
+nav ul li a {
+  font-size: 1.125rem;
+}
+
+/* ========== ECODELICES THEME LIGHT ========== */
+.light body,
+.light .bg-[#FDF6EC],
+body.light {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+
+.light h1, .light h2, .light h3, .light h4 {
+  color: #7CB342 !important;
+}
+
+.light header,
+.light .bg-[#FDF6EC] {
+  background-color: #FDF6EC !important;
+  color: #333 !important;
+}
+
+.light .border-[#B8C8A6] {
+  border-color: #B8C8A6 !important;
+}
+
+.light .bg-[#7CB342] {
+  background-color: #7CB342 !important;
+  color: #fff !important;
+}
+.light .text-[#7CB342] {
+  color: #7CB342 !important;
+}
+
+/* Example for buttons, cards, blockquote if needed
+.light .bg-card, .light .card {
+  background-color: #fffbea !important;
+  border-color: #dbeeca !important;
+}
+*/
+/* Corps de page beige */
+html.light, body.light {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+
+/* Header vert (différent du corps) */
+html.light header, body.light header {
+  background-color: #7CB342 !important;
+  color: #FDF6EC !important;
+}
+
+/* Titres verts */
+html.light h1, html.light h2, html.light h3, html.light h4,
+body.light h1, body.light h2, body.light h3, body.light h4 {
+  color: #7CB342 !important;
+}
+
+/* Bordures */
+html.light .border-[#B8C8A6], body.light .border-[#B8C8A6] {
+  border-color: #B8C8A6 !important;
+}
+html.light body, html.light #root, html.light main,
+body.light, body.light #root, body.light main {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+html.dark body,
+body.dark,
+html.dark #root,
+body.dark #root,
+html.dark main,
+body.dark main {
+  background-color: #222F3E !important; /* couleur sombre de fond, adapte si tu veux */
+  color: #FDF6EC !important;            /* texte clair en sombre */
+  transition: background-color 0.5s, color 0.5s;
+}
+

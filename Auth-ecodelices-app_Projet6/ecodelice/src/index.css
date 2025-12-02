@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+body {
+  font-family: 'Lora', serif;
+  background-color: #FDF6EC;
+  color: #333;
+  font-size: 18px;              /* Texte général plus grand */
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #7CB342;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;              /* Titres principaux plus grands */
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.125rem;          /* Paragraphe plus lisible */
+}
+
+/* Pour la barre de navigation */
+nav ul li a {
+  font-size: 1.125rem;
+}
+
+/* Thème clair ÉcoDélices (forcé quand html.light) */
+.light body,
+.light .bg-[#FDF6EC],
+body.light {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+
+.light h1, .light h2, .light h3, .light h4 {
+  color: #7CB342 !important;
+}
+
+.light header,
+.light .bg-[#FDF6EC] {
+  background-color: #FDF6EC !important;
+  color: #333 !important;
+}
+
+.light .border-[#B8C8A6] {
+  border-color: #B8C8A6 !important;
+}
+
+.light .bg-[#7CB342] {
+  background-color: #7CB342 !important;
+  color: #fff !important;
+}
+
+/* Contraste du bouton de navigation */
+.light .text-[#7CB342] {
+  color: #7CB342 !important;
+}
+
+/* ========== ECODELICES THEME LIGHT ========== */
+.light body,
+.light .bg-[#FDF6EC],
+body.light {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+
+.light h1, .light h2, .light h3, .light h4 {
+  color: #7CB342 !important;
+}
+
+.light header,
+.light .bg-[#FDF6EC] {
+  background-color: #FDF6EC !important;
+  color: #333 !important;
+}
+
+.light .border-[#B8C8A6] {
+  border-color: #B8C8A6 !important;
+}
+
+.light .bg-[#7CB342] {
+  background-color: #7CB342 !important;
+  color: #fff !important;
+}
+.light .text-[#7CB342] {
+  color: #7CB342 !important;
+}
+
+/* Example for buttons, cards, blockquote if needed
+.light .bg-card, .light .card {
+  background-color: #fffbea !important;
+  border-color: #dbeeca !important;
+}
+*/
+/* Corps de page beige */
+html.light, body.light {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+
+/* Header vert (différent du corps) */
+html.light header, body.light header {
+  background-color: #7CB342 !important;
+  color: #FDF6EC !important;
+}
+
+/* Titres verts */
+html.light h1, html.light h2, html.light h3, html.light h4,
+body.light h1, body.light h2, body.light h3, body.light h4 {
+  color: #7CB342 !important;
+}
+
+/* Bordures */
+html.light .border-[#B8C8A6], body.light .border-[#B8C8A6] {
+  border-color: #B8C8A6 !important;
+}
+html.light body, html.light #root, html.light main,
+body.light, body.light #root, body.light main {
+  background-color: #FDF6EC !important;
+  color: #2f3c20 !important;
+}
+html.dark body,
+body.dark,
+html.dark #root,
+body.dark #root,
+html.dark main,
+body.dark main {
+  background-color: #222F3E !important; /* couleur sombre de fond, adapte si tu veux */
+  color: #FDF6EC !important;            /* texte clair en sombre */
+  transition: background-color 0.5s, color 0.5s;
+}
+
